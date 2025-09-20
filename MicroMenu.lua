@@ -35,23 +35,18 @@ function MicroMenuMod:OnEnable()
 	if not self.bar then
 		self.bar = setmetatable(Bartender4.ButtonBar:Create("MicroMenu", self.db.profile, L["Micro Menu"]), {__index = MicroMenuBar})
 		local buttons = {}
-		table_insert(buttons, CharacterMicroButton)
-		table_insert(buttons, SpellbookMicroButton)
-		table_insert(buttons, TalentMicroButton)
-		table_insert(buttons, AchievementMicroButton)
-		table_insert(buttons, QuestLogMicroButton)
-		table_insert(buttons, SocialsMicroButton)
-		table_insert(buttons, PVPMicroButton)
-		table_insert(buttons, LFDMicroButton)
-		table_insert(buttons, MainMenuMicroButton)
-		table_insert(buttons, HelpMicroButton)
-		table_insert(buttons, StoreMicroButton)
-		table_insert(buttons, TransmogrifyMicroButton)
+
+		for _, button in pairs(SHARED_BARTENDER4_MICROMENU_BUTTONS) do
+			button = _G[button]
+
+			if button then
+				table_insert(buttons, button)
+			end
+		end
+		
 		self.bar.buttons = buttons
 
 		MicroMenuMod.button_count = #buttons
-
-		self:SecureHook("UpdateMicroButtons")
 
 		for i,v in pairs(buttons) do
 			v:SetParent(self.bar)
@@ -59,6 +54,8 @@ function MicroMenuMod:OnEnable()
 			v:SetFrameLevel(self.bar:GetFrameLevel() + 1)
 			v.ClearSetPoint = self.bar.ClearSetPoint
 		end
+
+		self:SecureHook("UpdateMicroButtons")
 	end
 	self.bar:Enable()
 	self:ToggleOptions()

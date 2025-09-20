@@ -24,6 +24,9 @@ L["Bar Snapping"] = true
 L["Bar Style & Layout"] = true
 L["Bars unlocked. Move them now and click Lock when you are done."] = true
 L["Bartender4"] = true
+L["Blizzard Art"] = true
+L["Blizzard Art Bar"] = true
+L["Blizzard interface"] = true
 L["Button Grid"] = true
 L["Button Lock"] = true
 L["Button Look"] = true
@@ -38,13 +41,19 @@ L["Center Vertically"] = true
 L["|cffffff00Click|r to toggle bar lock"] = true
 L["|cffffff00Right-click|r to open the options menu"] = true
 L["Change the current anchor point of the bar."] = true
+L["Choose between the classic WoW layout and two variations"] = true
+L["Choose the ending to the left"] = true
+L["Choose the ending to the right"] = true
+L["Classic"] = true
 L["Click-Through"] = true
 L["Colors"] = true
 L["Configure actionbar paging when the %s key is down."] = true
+L["Configure all of Bartender to preset defaults"] = true
 L["Configure Bar %s"] = true
 L["Configure how the Out of Range Indicator should display on the buttons."] = true
 L["Configure the alpha of the bar."] = true
 L["Configure the Bag Bar"] = true
+L["Configure the Blizzard Art Bar"] = true
 L["Configure the Button Tooltip."] = true
 L["Configure the Fade Out Alpha"] = true
 L["Configure the Fade Out Delay"] = true
@@ -62,11 +71,13 @@ L["Create a copy of the auto-generated conditionals in the custom configuration 
 L["CTRL"] = true
 L["Custom Conditionals"] = true
 L["Default Bar State"] = true
+L["Defaults"] = true
 L["Disable any reaction to mouse events on this bar, making the bar click-through."] = true
 L["Disabled"] = true
 L["Disabled in Combat"] = true
 L["Don't Page"] = true
 L["Down"] = true
+L["Empty button background"] = true
 L[ [=[Enable Auto-Assist for this bar.
  Auto-Assist will automatically try to cast on your target's target if your target is no valid target for the selected spell.]=] ] = true
 L[ [=[Enable Bar Switching based on the actionbar controls provided by the game. 
@@ -75,6 +86,7 @@ L["Enabled"] = true
 L["Enable/Disable the bar."] = true
 L["Enable State-based Button Swaping"] = true
 L["Enable the Bag Bar"] = true
+L["Enable the Blizzard Art Bar"] = true
 L["Enable the FadeOut mode"] = true
 L["Enable the Micro Menu"] = true
 L["Enable the PetBar"] = true
@@ -118,13 +130,14 @@ When reporting a bug, make sure you include the |cffffff78steps on how to reprod
 |cffffd200
 Who wrote this cool addon?
 |r
-Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
-]=]
+Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!]=]
 L["Focus-Cast by modifier"] = true
 L["Focus-Cast Modifier"] = true
 L["Frequently Asked Questions"] = true
 L["Full Button Mode"] = true
+L["Full reset"] = true
 L["General Settings"] = true
+L["Griffin"] = true
 L["Hide Hotkey"] = true
 L["Hide in Combat"] = true
 L["Hide in Stance/Form"] = true
@@ -148,7 +161,10 @@ L["Horizontal growth direction for this bar."] = true
 L["Hotkey Mode"] = true
 L["Key Bindings"] = true
 L["Keyring"] = true
+L["Layout"] = true
 L["Left"] = true
+L["Left ending"] = true
+L["Lion"] = true
 L["Lock"] = true
 L["Lock all bars."] = true
 L["Lock the buttons."] = true
@@ -163,6 +179,7 @@ L["Number of buttons."] = true
 L["Number of rows."] = true
 L["Offset in X direction (horizontal) from the given anchor point."] = true
 L["Offset in Y direction (vertical) from the given anchor point."] = true
+L["One action bar only"] = true
 L["One Bag"] = true
 L["Only show one Bag Button in the BagBar."] = true
 L["Out of Mana Indicator"] = true
@@ -174,9 +191,11 @@ L["Positioning"] = true
 L["Possess Bar"] = true
 L["Reputation Bar"] = true
 L["Reset Position"] = true
+L["Reset profile"] = true
 L["Reset the position of this bar completly if it ended up off-screen and you cannot reach it anymore."] = true
 L["Right"] = true
 L["Right-click Self-Cast"] = true
+L["Right ending"] = true
 L["Rows"] = true
 L["Scale"] = true
 L["Select the Focus-Cast Modifier"] = true
@@ -185,7 +204,9 @@ L["Self-Cast by modifier"] = true
 L["Self-Cast Modifier"] = true
 L["SHIFT"] = true
 L["Show a Icon to open the config at the Minimap"] = true
+L["Show Reputation Bar"] = true
 L["Show the keyring button."] = true
+L["Show XP Bar"] = true
 L["Specify the Color of the Out of Mana Indicator"] = true
 L["Specify the Color of the Out of Range Indicator"] = true
 L["Stance Bar"] = true
@@ -199,18 +220,22 @@ As a quick preview of whats planned:
 
 	- Absolute and relative Bar Positioning
 	- Bars "snapping" together and building clusters]=] ] = true
+L["The background of button places where no buttons are placed"] = true
 L["The bar default is to be visible all the time, you can configure conditions here to control when the bar should be hidden."] = true
 L["The default behaviour of this bar when no state-based paging option affects it."] = true
 L["The Positioning options here will allow you to position the bar to your liking and with an absolute precision."] = true
 L["This bar will be hidden once you enter combat."] = true
 L["This bar will be hidden whenever you are not in combat."] = true
+L["Toggle actions on key press instead of release"] = true
 L[ [=[Toggle Button Zoom
 For more style options you need to install ButtonFacade]=] ] = true
+L["Toggles actions immediately when you press the key, and not only on release. Note that draging actions will cause them to be cast in this mode."] = true
 L["Toggle the button grid."] = true
 L["Toggle the use of the modifier-based focus-cast functionality."] = true
 L["Toggle the use of the modifier-based self-cast functionality."] = true
 L["Toggle the use of the right-click self-cast functionality."] = true
 L["Totem Bar"] = true
+L["Two action bars"] = true
 L["Up"] = true
 L["Use Blizzard Vehicle UI"] = true
 L["Use Custom Condition"] = true
@@ -219,6 +244,7 @@ L["Vehicle Bar"] = true
 L["Vertical Growth"] = true
 L["Vertical growth direction for this bar."] = true
 L["Visibility"] = true
+L["WARNING: Pressing the button will reset your complete profile! If you're not sure about this create a new profile and use that to experiment."] = true
 L["X Offset"] = true
 L["XP Bar"] = true
 L["Y Offset"] = true
@@ -228,6 +254,7 @@ L[ [=[You can use any macro conditionals in the custom string, using "show" and 
 Example: [combat]hide;show]=] ] = true
 L[ [=[You can use any macro conditionals in the custom string, using the number of the bar as target value.
 Example: [form:1]9;0]=] ] = true
+L["You can use the preset defaults as a starting point for setting up your interface. Just choose your preferences here and click the button below to reset your profile to the preset default."] = true
 L["You have to exit the vehicle in order to be able to change the Vehicle UI settings."] = true
 L["Zoom"] = true
 

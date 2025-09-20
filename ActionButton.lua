@@ -178,6 +178,7 @@ function Bartender4.Button:Create(id, parent)
 	end
 
 	--self:UpdateAction(true)
+	button:UpdateOnClickDown()
 	button:UpdateHotkeys()
 	button:UpdateUsable()
 	button:UpdateGrid()
@@ -364,11 +365,15 @@ function Button:UpdateHotkeys()
 
 	if key == "" or self.parent.config.hidehotkey then
 		hotkey:SetText(RANGE_INDICATOR)
-		hotkey:SetPoint("TOPLEFT", self, "TOPLEFT", 1, -2)
+		if not LBF then
+			hotkey:SetPoint("TOPLEFT", self, "TOPLEFT", 1, -2)
+		end
 		hotkey:Hide()
 	else
 		hotkey:SetText(key)
-		hotkey:SetPoint("TOPLEFT", self, "TOPLEFT", -2, -2)
+		if not LBF then
+			hotkey:SetPoint("TOPLEFT", self, "TOPLEFT", -2, -2)
+		end
 		hotkey:Show()
 	end
 end
@@ -506,6 +511,10 @@ function Button:HideGrid()
 		self:SetAttribute("showgrid", max(0, self:GetAttribute("showgrid") - 1))
 		self:UpdateGrid()
 	end
+end
+
+function Button:UpdateOnClickDown()
+	self:RegisterForClicks(Bartender4.db.profile.onkeydown and "AnyDown" or "AnyUp")
 end
 
 function Button:ClearSetPoint(...)

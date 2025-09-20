@@ -20,6 +20,9 @@ if not L then return end
 -- L["Bar Style & Layout"] = "Bar Style & Layout"
 -- L["Bars unlocked. Move them now and click Lock when you are done."] = "Bars unlocked. Move them now and click Lock when you are done."
 -- L["Bartender4"] = "Bartender4"
+-- L["Blizzard Art"] = "Blizzard Art"
+-- L["Blizzard Art Bar"] = "Blizzard Art Bar"
+-- L["Blizzard interface"] = "Blizzard interface"
 -- L["Button Grid"] = "Button Grid"
 -- L["Button Lock"] = "Button Lock"
 -- L["Button Look"] = "Button Look"
@@ -34,13 +37,19 @@ if not L then return end
 -- L["|cffffff00Click|r to toggle bar lock"] = "|cffffff00Click|r to toggle bar lock"
 -- L["|cffffff00Right-click|r to open the options menu"] = "|cffffff00Right-click|r to open the options menu"
 -- L["Change the current anchor point of the bar."] = "Change the current anchor point of the bar."
+-- L["Choose between the classic WoW layout and two variations"] = "Choose between the classic WoW layout and two variations"
+-- L["Choose the ending to the left"] = "Choose the ending to the left"
+-- L["Choose the ending to the right"] = "Choose the ending to the right"
+-- L["Classic"] = "Classic"
 -- L["Click-Through"] = "Click-Through"
 -- L["Colors"] = "Colors"
 -- L["Configure actionbar paging when the %s key is down."] = "Configure actionbar paging when the %s key is down."
+-- L["Configure all of Bartender to preset defaults"] = "Configure all of Bartender to preset defaults"
 -- L["Configure Bar %s"] = "Configure Bar %s"
 -- L["Configure how the Out of Range Indicator should display on the buttons."] = "Configure how the Out of Range Indicator should display on the buttons."
 -- L["Configure the alpha of the bar."] = "Configure the alpha of the bar."
 -- L["Configure the Bag Bar"] = "Configure the Bag Bar"
+-- L["Configure the Blizzard Art Bar"] = "Configure the Blizzard Art Bar"
 -- L["Configure the Button Tooltip."] = "Configure the Button Tooltip."
 -- L["Configure the Fade Out Alpha"] = "Configure the Fade Out Alpha"
 -- L["Configure the Fade Out Delay"] = "Configure the Fade Out Delay"
@@ -58,11 +67,13 @@ if not L then return end
 -- L["CTRL"] = "CTRL"
 -- L["Custom Conditionals"] = "Custom Conditionals"
 -- L["Default Bar State"] = "Default Bar State"
+-- L["Defaults"] = "Defaults"
 -- L["Disable any reaction to mouse events on this bar, making the bar click-through."] = "Disable any reaction to mouse events on this bar, making the bar click-through."
 -- L["Disabled"] = "Disabled"
 -- L["Disabled in Combat"] = "Disabled in Combat"
 -- L["Don't Page"] = "Don't Page"
 -- L["Down"] = "Down"
+-- L["Empty button background"] = "Empty button background"
 --[==[ L[ [=[Enable Auto-Assist for this bar.
  Auto-Assist will automatically try to cast on your target's target if your target is no valid target for the selected spell.]=] ] = [=[Enable Auto-Assist for this bar.
  Auto-Assist will automatically try to cast on your target's target if your target is no valid target for the selected spell.]=] ]==]
@@ -73,6 +84,7 @@ See Blizzard Key Bindings for assignments - Usually Shift-Mouse Wheel and Shift+
 -- L["Enable/Disable the bar."] = "Enable/Disable the bar."
 -- L["Enable State-based Button Swaping"] = "Enable State-based Button Swaping"
 -- L["Enable the Bag Bar"] = "Enable the Bag Bar"
+-- L["Enable the Blizzard Art Bar"] = "Enable the Blizzard Art Bar"
 -- L["Enable the FadeOut mode"] = "Enable the FadeOut mode"
 -- L["Enable the Micro Menu"] = "Enable the Micro Menu"
 -- L["Enable the PetBar"] = "Enable the PetBar"
@@ -116,13 +128,14 @@ When reporting a bug, make sure you include the |cffffff78steps on how to reprod
 |cffffd200
 Who wrote this cool addon?
 |r
-Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
-]=] ]==]
+Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!]=] ]==]
 -- L["Focus-Cast by modifier"] = "Focus-Cast by modifier"
 -- L["Focus-Cast Modifier"] = "Focus-Cast Modifier"
 -- L["Frequently Asked Questions"] = "Frequently Asked Questions"
 -- L["Full Button Mode"] = "Full Button Mode"
+-- L["Full reset"] = "Full reset"
 -- L["General Settings"] = "General Settings"
+-- L["Griffin"] = "Griffin"
 -- L["Hide Hotkey"] = "Hide Hotkey"
 -- L["Hide in Combat"] = "Hide in Combat"
 -- L["Hide in Stance/Form"] = "Hide in Stance/Form"
@@ -146,7 +159,10 @@ Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
 -- L["Hotkey Mode"] = "Hotkey Mode"
 -- L["Key Bindings"] = "Key Bindings"
 -- L["Keyring"] = "Keyring"
+-- L["Layout"] = "Layout"
 -- L["Left"] = "Left"
+-- L["Left ending"] = "Left ending"
+-- L["Lion"] = "Lion"
 -- L["Lock"] = "Lock"
 -- L["Lock all bars."] = "Lock all bars."
 -- L["Lock the buttons."] = "Lock the buttons."
@@ -161,6 +177,7 @@ Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
 -- L["Number of rows."] = "Number of rows."
 -- L["Offset in X direction (horizontal) from the given anchor point."] = "Offset in X direction (horizontal) from the given anchor point."
 -- L["Offset in Y direction (vertical) from the given anchor point."] = "Offset in Y direction (vertical) from the given anchor point."
+-- L["One action bar only"] = "One action bar only"
 -- L["One Bag"] = "One Bag"
 -- L["Only show one Bag Button in the BagBar."] = "Only show one Bag Button in the BagBar."
 -- L["Out of Mana Indicator"] = "Out of Mana Indicator"
@@ -172,9 +189,11 @@ Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
 -- L["Possess Bar"] = "Possess Bar"
 -- L["Reputation Bar"] = "Reputation Bar"
 -- L["Reset Position"] = "Reset Position"
+-- L["Reset profile"] = "Reset profile"
 -- L["Reset the position of this bar completly if it ended up off-screen and you cannot reach it anymore."] = "Reset the position of this bar completly if it ended up off-screen and you cannot reach it anymore."
 -- L["Right"] = "Right"
 -- L["Right-click Self-Cast"] = "Right-click Self-Cast"
+-- L["Right ending"] = "Right ending"
 -- L["Rows"] = "Rows"
 -- L["Scale"] = "Scale"
 -- L["Select the Focus-Cast Modifier"] = "Select the Focus-Cast Modifier"
@@ -183,7 +202,9 @@ Bartender4 was written by Nevcairiel of EU-Antonidas, the author of Bartender3!
 -- L["Self-Cast Modifier"] = "Self-Cast Modifier"
 -- L["SHIFT"] = "SHIFT"
 -- L["Show a Icon to open the config at the Minimap"] = "Show a Icon to open the config at the Minimap"
+-- L["Show Reputation Bar"] = "Show Reputation Bar"
 -- L["Show the keyring button."] = "Show the keyring button."
+-- L["Show XP Bar"] = "Show XP Bar"
 -- L["Specify the Color of the Out of Mana Indicator"] = "Specify the Color of the Out of Mana Indicator"
 -- L["Specify the Color of the Out of Range Indicator"] = "Specify the Color of the Out of Range Indicator"
 -- L["Stance Bar"] = "Stance Bar"
@@ -202,19 +223,23 @@ As a quick preview of whats planned:
 
 	- Absolute and relative Bar Positioning
 	- Bars "snapping" together and building clusters]=] ]==]
+-- L["The background of button places where no buttons are placed"] = "The background of button places where no buttons are placed"
 -- L["The bar default is to be visible all the time, you can configure conditions here to control when the bar should be hidden."] = "The bar default is to be visible all the time, you can configure conditions here to control when the bar should be hidden."
 -- L["The default behaviour of this bar when no state-based paging option affects it."] = "The default behaviour of this bar when no state-based paging option affects it."
 -- L["The Positioning options here will allow you to position the bar to your liking and with an absolute precision."] = "The Positioning options here will allow you to position the bar to your liking and with an absolute precision."
 -- L["This bar will be hidden once you enter combat."] = "This bar will be hidden once you enter combat."
 -- L["This bar will be hidden whenever you are not in combat."] = "This bar will be hidden whenever you are not in combat."
+-- L["Toggle actions on key press instead of release"] = "Toggle actions on key press instead of release"
 --[==[ L[ [=[Toggle Button Zoom
 For more style options you need to install ButtonFacade]=] ] = [=[Toggle Button Zoom
 For more style options you need to install ButtonFacade]=] ]==]
+-- L["Toggles actions immediately when you press the key, and not only on release. Note that draging actions will cause them to be cast in this mode."] = "Toggles actions immediately when you press the key, and not only on release. Note that draging actions will cause them to be cast in this mode."
 -- L["Toggle the button grid."] = "Toggle the button grid."
 -- L["Toggle the use of the modifier-based focus-cast functionality."] = "Toggle the use of the modifier-based focus-cast functionality."
 -- L["Toggle the use of the modifier-based self-cast functionality."] = "Toggle the use of the modifier-based self-cast functionality."
 -- L["Toggle the use of the right-click self-cast functionality."] = "Toggle the use of the right-click self-cast functionality."
 -- L["Totem Bar"] = "Totem Bar"
+-- L["Two action bars"] = "Two action bars"
 -- L["Up"] = "Up"
 -- L["Use Blizzard Vehicle UI"] = "Use Blizzard Vehicle UI"
 -- L["Use Custom Condition"] = "Use Custom Condition"
@@ -223,6 +248,7 @@ For more style options you need to install ButtonFacade]=] ]==]
 -- L["Vertical Growth"] = "Vertical Growth"
 -- L["Vertical growth direction for this bar."] = "Vertical growth direction for this bar."
 -- L["Visibility"] = "Visibility"
+-- L["WARNING: Pressing the button will reset your complete profile! If you're not sure about this create a new profile and use that to experiment."] = "WARNING: Pressing the button will reset your complete profile! If you're not sure about this create a new profile and use that to experiment."
 -- L["X Offset"] = "X Offset"
 -- L["XP Bar"] = "XP Bar"
 -- L["Y Offset"] = "Y Offset"
@@ -235,6 +261,7 @@ Example: [combat]hide;show]=] ]==]
 --[==[ L[ [=[You can use any macro conditionals in the custom string, using the number of the bar as target value.
 Example: [form:1]9;0]=] ] = [=[You can use any macro conditionals in the custom string, using the number of the bar as target value.
 Example: [form:1]9;0]=] ]==]
+-- L["You can use the preset defaults as a starting point for setting up your interface. Just choose your preferences here and click the button below to reset your profile to the preset default."] = "You can use the preset defaults as a starting point for setting up your interface. Just choose your preferences here and click the button below to reset your profile to the preset default."
 -- L["You have to exit the vehicle in order to be able to change the Vehicle UI settings."] = "You have to exit the vehicle in order to be able to change the Vehicle UI settings."
 -- L["Zoom"] = "Zoom"
 

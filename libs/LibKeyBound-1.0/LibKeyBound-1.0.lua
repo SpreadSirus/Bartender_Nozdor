@@ -1,6 +1,6 @@
 --[[
 Name: LibKeyBound-1.0
-Revision: $Rev: 93 $
+Revision: $Rev: 95 $
 Author(s): Gello, Maul, Toadkiller, Tuller
 Website: http://www.wowace.com/wiki/LibKeyBound-1.0
 Documentation: http://www.wowace.com/wiki/LibKeyBound-1.0
@@ -10,7 +10,7 @@ Dependencies: CallbackHandler-1.0
 --]]
 
 local MAJOR = 'LibKeyBound-1.0'
-local MINOR = tonumber(("$Revision: 93 $"):match("(%d+)")) + 90000
+local MINOR = tonumber(("$Revision: 95 $"):match("(%d+)")) + 90000
 
 --[[
 	LibKeyBound-1.0
@@ -511,7 +511,7 @@ function LibKeyBound.Binder:OnKeyDown(key)
 		end
 	end
 
-	if MouseIsOver(button) then
+	if button:IsMouseOver() then
 		self:SetKey(button, key)
 		LibKeyBound:Set(button)
 	end

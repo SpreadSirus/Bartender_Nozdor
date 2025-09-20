@@ -1,6 +1,6 @@
 ﻿--[[
 Name: LibWindow-1.1
-Revision: $Rev: 4 $
+Revision: $Rev: 5 $
 Author(s): Mikk (dpsgnome@mail.com)
 Website: http://old.wowace.com/wiki/LibWindow-1.1
 Documentation: http://old.wowace.com/wiki/LibWindow-1.1
@@ -11,13 +11,18 @@ License: Public Domain
 ]]
 
 local MAJOR = "LibWindow-1.1"
-local MINOR = tonumber(("$Revision: 4 $"):match("(%d+)"))
+local MINOR = tonumber(("$Revision: 5 $"):match("(%d+)"))
 
 local lib = LibStub:NewLibrary(MAJOR,MINOR)
 if not lib then return end
 
-local function print(msg) ChatFrame1:AddMessage(MAJOR..": "..tostring(msg)) end
+local min,max,abs = min,max,abs
+local pairs = pairs
+local tostring = tostring
+local UIParent,GetScreenWidth,GetScreenHeight,IsAltKeyDown = UIParent,GetScreenWidth,GetScreenHeight,IsAltKeyDown
+-- GLOBALS: error, ChatFrame1, assert
 
+local function print(msg) ChatFrame1:AddMessage(MAJOR..": "..tostring(msg)) end
 
 lib.utilFrame = lib.utilFrame or CreateFrame("Frame")
 lib.delayedSavePosition = lib.delayedSavePosition or {}
@@ -297,7 +302,7 @@ end
 ---------------------------------------------------------
 
 function lib:Embed(target)
-	if not target or not target[0] or not target.GetFrameType then
+	if not target or not target[0] or not target.GetObjectType then
 		error("Usage: LibWindow:Embed(frame)", 1)
 	end
 	for name, _ in pairs(mixins) do
